@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1077a3</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorSecondary">#03DAC5</color>
+
+    <!-- Background color for the categories -->
+    <color name="category_foods">#FFA000</color>
+    <color name="category_scenery">#000000</color>
+    <color name="category_poi">#0000FF</color>
+    <color name="category_parks">#10a31a</color>
+
+    <color name="tab_textColor">#BDBDBD</color>
+    <color name="tab_textColor_selected">@android:color/white</color>
+
+    <color name="star_review">#f9f159</color>
+</resources>
