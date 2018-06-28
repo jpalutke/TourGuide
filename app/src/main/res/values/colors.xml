@@ -10,9 +10,10 @@
     <color name="category_scenery">#000000</color>
     <color name="category_poi">#0000FF</color>
     <color name="category_parks">#10a31a</color>
+    <color name="category_historical">#bf7446</color>
 
     <color name="tab_textColor">#BDBDBD</color>
-    <color name="tab_textColor_selected">@android:color/white</color>
+    <color name="tab_textColor_selected">@android:color/black</color>
 
     <color name="star_review">#f9f159</color>
 </resources>

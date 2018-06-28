@@ -27,7 +27,7 @@ public class FoodsFragment extends Fragment {
         tourEntries.add(new TourEntry("El Mezcal", "Mexican Dining", 5.0, 52, 44.9287060, -89.6547200, R.drawable.el_mezcal));
         tourEntries.add(new TourEntry("Thrive Foodery", "Casual Dining", 3.5, 32, 44.9736290, -89.6282170, R.drawable.thrive_foodery));
         tourEntries.add(new TourEntry("Lynn's Kitchen", "Family Dining", 5.0, 5, 44.9166886, -89.9654516, R.drawable.skillet));
-        tourEntries.add(new TourEntry("McDonald's", "Fast food", 1.0, 0, 44.9593750, -89.6611570, R.drawable.mcdonalds_logo));
+        tourEntries.add(new TourEntry("McDonald's", "Fast food", 1.0, 12, 44.9593750, -89.6611570, R.drawable.mcdonalds_logo));
         tourEntries.add(new TourEntry("Hardees", "Fast food", 1.0, 82, 44.9571160, -89.6689540, R.drawable.burgerking_logo));
 
 

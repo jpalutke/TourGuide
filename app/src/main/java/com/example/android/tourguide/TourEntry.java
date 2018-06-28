@@ -3,6 +3,7 @@ package com.example.android.tourguide;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+@SuppressWarnings("SameParameterValue")
 public class TourEntry implements Parcelable {
     // method used by Parcelable creation
     public static final Creator<TourEntry> CREATOR
@@ -24,6 +25,7 @@ public class TourEntry implements Parcelable {
     private final double latitude;
     private final double longitude;
     private final boolean mappable;
+    private final String story;
 
     /**
      * {@link TourEntry}
@@ -43,8 +45,33 @@ public class TourEntry implements Parcelable {
         this.reviewCount = reviewCount;
         this.latitude = latitude;
         this.longitude = longitude;
-        this.mappable = true;
+        this.mappable = !(longitude == 0.0 && latitude == 0.0);
         this.imageResourceID = imageResourceID;
+        this.story = "";
+    }
+
+    /**
+     * {@link TourEntry}
+     *
+     * @param title           string containing the title of the entry
+     * @param details         string containing the details of the entry
+     * @param latitude        double containing the latitude of the location
+     * @param longitude       double containing the longitude of the location
+     * @param imageResourceID int containing the imageResourceID for the entry
+     * @param stars           double for stars rated
+     * @param reviewCount     int number of reviews
+     * @param detailsStory    string containing a detailed story for details page view
+     */
+    TourEntry(String title, String details, @SuppressWarnings("SameParameterValue") Double stars, int reviewCount, double latitude, double longitude, int imageResourceID, String detailsStory) {
+        this.title = title;
+        this.details = details;
+        this.stars = stars;
+        this.reviewCount = reviewCount;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.mappable = !(longitude == 0.0 && latitude == 0.0);
+        this.imageResourceID = imageResourceID;
+        this.story = detailsStory;
     }
 
     /**
@@ -59,6 +86,7 @@ public class TourEntry implements Parcelable {
         stars = in.readDouble();
         reviewCount = in.readInt();
         imageResourceID = in.readInt();
+        story = in.readString();
     }
 
     // Getter(s):
@@ -90,9 +118,16 @@ public class TourEntry implements Parcelable {
         return longitude;
     }
 
-    // returns true if an imageResourceID was specified
     public boolean hasImage() {
         return imageResourceID != -1;
+    }
+
+    public boolean isMappable() {
+        return mappable;
+    }
+
+    public String getStory() {
+        return story;
     }
 
     // required method for Parcelable
@@ -115,5 +150,6 @@ public class TourEntry implements Parcelable {
         dest.writeDouble(stars);
         dest.writeInt(reviewCount);
         dest.writeInt(imageResourceID);
+        dest.writeString(story);
     }
 }

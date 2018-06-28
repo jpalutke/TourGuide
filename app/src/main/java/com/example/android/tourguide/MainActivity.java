@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Find the tab layout that shows the tabs
         TabLayout tabLayout = findViewById(R.id.tabs);
+        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
 
         // Connect the tab layout with the view pager. This will
         //   1. Update the tab layout when the view pager is swiped

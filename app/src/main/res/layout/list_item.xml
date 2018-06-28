@@ -4,6 +4,7 @@
     android:id="@+id/list_item_background"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:gravity="center_vertical"
     android:orientation="horizontal"
     tools:background="@android:color/darker_gray"
     tools:listitem="@layout/list_item">
@@ -30,7 +31,7 @@
         android:layout_height="@dimen/list_item_image_height"
         android:layout_gravity="center_vertical"
         android:contentDescription="@string/image_for_list"
-        android:scaleType="fitCenter"
+        android:scaleType="fitXY"
         tools:background="@color/colorAccent"
         tools:layout_height="@dimen/list_item_image_height"
         tools:layout_width="@dimen/list_item_image_height" />
@@ -99,14 +100,6 @@
                 android:text=""
                 android:textColor="@android:color/white" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="24dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginStart="8dp"
-                android:gravity="bottom"
-                android:text="@string/reviews"
-                android:textColor="@android:color/white" />
         </LinearLayout>
 
         <TextView

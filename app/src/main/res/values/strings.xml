@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Tour Guide</string>
     <string name="category_food">Food</string>
-    <string name="category_scenery">Area Scenery</string>
+    <string name="category_scenery">Scenery</string>
     <string name="category_poi">Points of Interest</string>
     <string name="category_parks">Parks and Recreation</string>
+    <string name="category_historical">Historical Sites</string>
     <string name="title_activity_maps">Map</string>
     <string name="area_scenery_image">Area Scenery Image</string>
     <string name="image_for_list">Image for List</string>
@@ -12,7 +13,6 @@
     <string name="star_3">Star 3</string>
     <string name="star_4">Star 4</string>
     <string name="star_5">Star 5</string>
-    <string name="reviews">reviews</string>
     <string name="map_pin_image">Map Pin Image</string>
 
 </resources>

@@ -111,7 +111,11 @@ class TourEntryAdapter extends ArrayAdapter<TourEntry> {
 
                 // show review count
                 TextView tv = listItemView.findViewById(R.id.review_count);
-                tv.setText(format("%d", currentTourEntry.getReviewCount()));
+                if (currentTourEntry.getReviewCount() > 0) {
+                    tv.setText(String.format("%s reviews", format("%d", currentTourEntry.getReviewCount())));
+                    tv.setVisibility(View.VISIBLE);
+                } else
+                    tv.setVisibility(View.GONE);
 
                 // if an image for the item was specified on creation,
                 //  show it, otherwise hide the ImageView.
@@ -122,6 +126,10 @@ class TourEntryAdapter extends ArrayAdapter<TourEntry> {
                 } else {
                     imageView.setVisibility(View.GONE);
                 }
+                if (currentTourEntry.isMappable() && currentTourEntry.getStory().equals(""))
+                    listItemView.findViewById(R.id.list_item_map_pin_container).setVisibility(View.VISIBLE);
+                else
+                    listItemView.findViewById(R.id.list_item_map_pin_container).setVisibility(View.GONE);
             }
         }
 

@@ -32,6 +32,8 @@ class CategoryAdapter extends FragmentPagerAdapter {
                 return new ParksFragment();
             case 2:
                 return new PoiFragment();
+            case 3:
+                return new HistoricalFragment();
             default:
                 return new SceneryFragment();
         }
@@ -42,7 +44,7 @@ class CategoryAdapter extends FragmentPagerAdapter {
      */
     @Override
     public int getCount() {
-        return 4;
+        return 5;
     }
 
     @Override
@@ -54,6 +56,8 @@ class CategoryAdapter extends FragmentPagerAdapter {
                 return context.getString(R.string.category_parks);
             case 2:
                 return context.getString(R.string.category_poi);
+            case 3:
+                return context.getString(R.string.category_historical);
             default:
                 return context.getString(R.string.category_scenery);
         }
