@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">Tour Guide</string>
+
     <string name="category_food">Food</string>
     <string name="category_scenery">Scenery</string>
     <string name="category_poi">Points of Interest</string>
     <string name="category_parks">Parks and Recreation</string>
     <string name="category_historical">Historical Sites</string>
+
     <string name="title_activity_maps">Map</string>
     <string name="area_scenery_image">Area Scenery Image</string>
     <string name="image_for_list">Image for List</string>
@@ -14,5 +16,55 @@
     <string name="star_4">Star 4</string>
     <string name="star_5">Star 5</string>
     <string name="map_pin_image">Map Pin Image</string>
+
+    <string name="mint_cafe_title">Mint Cafe</string>
+    <string name="mezcal_title">El Mezcal</string>
+    <string name="thrive_title">Thrive Foodery</string>
+    <string name="lynn_title">Lynn\'s Kitchen</string>
+    <string name="mcdonalds_title">McDonald\'s</string>
+    <string name="hardees_title">Hardees</string>
+
+    <string name="mexican_dining">Mexican Dining</string>
+    <string name="casual_dining">Casual Dining</string>
+    <string name="family_dining">Family Dining</string>
+    <string name="fast_food">Fast Food</string>
+    <string name="wausau_railroad_depot_title">Wausau Railroad Depot</string>
+    <string name="wausau_railroad_depot_detail">720 Grant Street Wausau, WI 54403</string>
+    <string name="wausau_railroad_depot_details_story"><![CDATA[This landmark is a highly recognized symbol of Wausau. Wausau Insurance Companies used the depot as its trademark as early as 1954. Finding this depot while you’re in the area is not as simple as you might think because, in truth, Wausau has three depots.</p><p align=\"justify\">The depot in the Wausau Insurance trademark is modeled after the former Milwaukee Railroad facility located at 720 Grant Street. A faithful reproduction of this famous building was built by Wausau Insurance and serves as a meeting facility near their corporate headquarters at 1800 Westwood Drive.</p><p align=\"justify\">The third depot once served passengers of the Chicago Northwestern Railroad. Now home to several businesses, it is located on Washington Street in downtown Wausau along the Wisconsin River.]]></string>
+    <string name="ishorgen_title">I.S. Horgen Antique Farm Machinery Museum</string>
+    <string name="ishorgen_detail">1201 Stewart Avenue Wausau, WI 54401</string>
+    <string name="ishorgen_details_story">A fascinating display of antique farm equipment and tools including vintage dairy artifacts, large wagons, carriages and more. The collection is well organized and labeled for easy viewing. A special toy farm and a toy farm tractor collection is on display. Admission is free and the museum is handicapped accessible.</string>
+    <string name="woodson_art_title">Woodson Art Museum</string>
+    <string name="woodson_art_detail">700 North Twelfth Street Wausau, WI 54403</string>
+    <string name="woodson_art_details_story">Every September through the second weekend in November, 110 artists from the world over, display their creations of birds. The museum is known for it\'s permanent collection of bird art that graces the gallery all year long.</string>
+    <string name="woodson_history_title">Woodson History Center</string>
+    <string name="woodson_history_detail">410 McIndoe Street Wausau, WI 54403</string>
+    <string name="woodson_history_details_story"><![CDATA[This lovely brick house was built in 1914 for the Yawkey’s daughter Leigh and her husband Aytchmonde P. Woodson. This house was also designed by George W. Maher.</p><p align=\"justify\">After both of the Yawkeys had died, the Woodsons moved to Highland Park Boulevard and sold their house to the Immanuel Baptist congregation. The church added a bell tower and a sanctuary to the back of the house in 1956.</p><p align=\"justify\">The Historical Society purchased the Woodson House in 1995, and today it contains the library and archives, artifacts and exhibits.</p><p align=\"justify\">The old Woodson mansion has a haunted past. Staff have reported the sound of a telephone ringing in a room that has no phone. Phantom footsteps can be heard coming down the upstairs hallway and descending the main staircase. Strange odors have been reported in an upstairs room, and the door alarm often sounds by itself.]]></string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="title">title</string>
+    <string name="details">details</string>
+    <string name="story">story</string>
+    <string name="imageResourceID">imageResourceID</string>
+    <string name="html_header"><![CDATA[<html><body><p align=\"justify\">]]></string>
+    <string name="html_footer"><![CDATA[</p></body></html>]]></string>
+    <string name="monk_title">Monk Botanical Gardens</string>
+    <string name="monk_detail"><![CDATA[29-acre park with themed areas such as a meditation garden, extensive trails & a treehouse.]]></string>
+    <string name="rib_mountain_title">Rib Mountain State Park</string>
+    <string name="rib_mountain_detail">Rib Mountain State Park is a 1,528-acre Wisconsin state park near the city of Wausau. The park includes a ski resort concession, Granite Peak Ski Area, a reservable amphitheather, and 15.1 miles of trails.</string>
+    <string name="marathon_park_title">Marathon Park</string>
+    <string name="marathon_park_detail"><![CDATA[Large park with mature pine trees & campsites, plus ballfields, skating rinks & a kids\' train ride.]]></string>
+    <string name="sylvan_title">Sylvan Hill Park</string>
+    <string name="sylvan_detail"><![CDATA[Popular place with a mountain biking park, cross-country ski trails & a tubing hill with tows.]]></string>
+    <string name="ferns_title">Isle of Ferns State Park</string>
+    <string name="ferns_detail">Open play areas, hiking trails, popular place for wedding ceremony.</string>
+    <string name="whitewater_title">Wausau Whitewater Park</string>
+    <string name="whitewater_detail"><![CDATA[Nonprofit locale for competitive kayaking & canoeing, with slalom & freestyle runs.]]></string>
+    <string name="colossal_title">Colossal Fossils Downtown Museum</string>
+    <string name="colossal_detail">Colossal Fossils collection includes fossils from many dinosaurs, mammals, plants and corals.</string>
+    <string name="granite_title">Granite Peak Ski Area</string>
+    <string name="granite_detail">Featuring 74 runs and 6 terrain parks with a vertical drop of 700 feet.</string>
+    <string name="yawkey_title">Leigh Yawkey Woodson Art Museum</string>
+    <string name="yawkey_detail">Best known for its annual \"Birds in Art\" exhibition, which exhibits contemporary artistic representations of birds.</string>
 
 </resources>

@@ -23,13 +23,13 @@ public class PoiFragment extends Fragment {
 
         // Create a list of {@link TourEntry} items
         final ArrayList<TourEntry> tourEntries = new ArrayList<>();
-        tourEntries.add(new TourEntry("Colossal Fossils Downtown Museum", "Colossal Fossils collection includes fossils from many dinosaurs, mammals, plants and corals.",
+        tourEntries.add(new TourEntry(getString(R.string.colossal_title), getString(R.string.colossal_detail),
                 4.5, 1, 44.9584100, -89.6281060, R.drawable.colossal_fossils_downtown_museum));
-        tourEntries.add(new TourEntry("Granite Peak Ski Area", "Featuring 74 runs and 6 terrain parks with a vertical drop of 700 feet.",
+        tourEntries.add(new TourEntry(getString(R.string.granite_title), getString(R.string.granite_detail),
                 4.0, 285, 44.9324360, -89.6809720, R.drawable.granite_peak_ski_area));
-        tourEntries.add(new TourEntry("Leigh Yawkey Woodson Art Museum", "Best known for its annual \"Birds in Art\" exhibition, which exhibits contemporary artistic representations of birds.",
+        tourEntries.add(new TourEntry(getString(R.string.yawkey_title), getString(R.string.yawkey_detail),
                 5.0, 180, 44.9628330, -89.6134660, R.drawable.leigh_yawkey_woodson_art_museum));
-        tourEntries.add(new TourEntry("Monk Botanical Gardens", "29-acre park with themed areas such as a meditation garden, extensive trails & a treehouse.",
+        tourEntries.add(new TourEntry(getString(R.string.monk_title), getString(R.string.monk_detail),
                 4.5, 61, 44.9881930, -89.6374250, R.drawable.monk_botanical_gardens));
 
         // Create an {@link TourEntryAdapter}, whose data source is a list of {@link Word}s. The
@@ -53,9 +53,9 @@ public class PoiFragment extends Fragment {
                 // Get the {@link TourEntry} object at the given position the user clicked on
                 TourEntry tourEntry = tourEntries.get(position);
                 Intent mapIntent = new Intent(getContext(), MapsActivity.class);
-                mapIntent.putExtra("latitude", tourEntry.getLatitude());
-                mapIntent.putExtra("longitude", tourEntry.getLongitude());
-                mapIntent.putExtra("title", tourEntry.getTitle());
+                mapIntent.putExtra(getString(R.string.latitude), tourEntry.getLatitude());
+                mapIntent.putExtra(getString(R.string.longitude), tourEntry.getLongitude());
+                mapIntent.putExtra(getString(R.string.title), tourEntry.getTitle());
                 startActivity(mapIntent);
             }
         });

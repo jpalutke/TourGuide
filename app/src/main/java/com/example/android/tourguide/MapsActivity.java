@@ -31,9 +31,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
-        latitude = getIntent().getDoubleExtra("latitude", 0);
-        longitude = getIntent().getDoubleExtra("longitude", 0);
-        title = getIntent().getStringExtra("title");
+        latitude = getIntent().getDoubleExtra(getString(R.string.latitude), 0);
+        longitude = getIntent().getDoubleExtra(getString(R.string.longitude), 0);
+        title = getIntent().getStringExtra(getString(R.string.title));
         mapFragment.getMapAsync(this);
     }
 

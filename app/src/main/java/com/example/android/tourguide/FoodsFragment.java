@@ -23,12 +23,12 @@ public class FoodsFragment extends Fragment {
 
         // Create a list of {@LINK TourEntry} items
         final ArrayList<TourEntry> tourEntries = new ArrayList<>();
-        tourEntries.add(new TourEntry("Mint Cafe", "Casual Style", 4.5, 89, 44.9603180, -89.6279600, R.drawable.mint_cafe));
-        tourEntries.add(new TourEntry("El Mezcal", "Mexican Dining", 5.0, 52, 44.9287060, -89.6547200, R.drawable.el_mezcal));
-        tourEntries.add(new TourEntry("Thrive Foodery", "Casual Dining", 3.5, 32, 44.9736290, -89.6282170, R.drawable.thrive_foodery));
-        tourEntries.add(new TourEntry("Lynn's Kitchen", "Family Dining", 5.0, 5, 44.9166886, -89.9654516, R.drawable.skillet));
-        tourEntries.add(new TourEntry("McDonald's", "Fast food", 1.0, 12, 44.9593750, -89.6611570, R.drawable.mcdonalds_logo));
-        tourEntries.add(new TourEntry("Hardees", "Fast food", 1.0, 82, 44.9571160, -89.6689540, R.drawable.burgerking_logo));
+        tourEntries.add(new TourEntry(getString(R.string.mint_cafe_title), getString(R.string.casual_dining), 4.5, 89, 44.9603180, -89.6279600, R.drawable.mint_cafe));
+        tourEntries.add(new TourEntry(getString(R.string.mezcal_title), getString(R.string.mexican_dining), 5.0, 52, 44.9287060, -89.6547200, R.drawable.el_mezcal));
+        tourEntries.add(new TourEntry(getString(R.string.thrive_title), getString(R.string.casual_dining), 3.5, 32, 44.9736290, -89.6282170, R.drawable.thrive_foodery));
+        tourEntries.add(new TourEntry(getString(R.string.lynn_title), getString(R.string.family_dining), 5.0, 5, 44.9166886, -89.9654516, R.drawable.skillet));
+        tourEntries.add(new TourEntry(getString(R.string.mcdonalds_title), getString(R.string.fast_food), 1.0, 12, 44.9593750, -89.6611570, R.drawable.mcdonalds_logo));
+        tourEntries.add(new TourEntry(getString(R.string.hardees_title), getString(R.string.fast_food), 1.0, 82, 44.9571160, -89.6689540, R.drawable.burgerking_logo));
 
 
         // Create an {@link TourEntryAdapter}, whose data source is a list of {@link Word}s. The
@@ -52,9 +52,9 @@ public class FoodsFragment extends Fragment {
                 // Get the {@link TourEntry} object at the given position the user clicked on
                 TourEntry tourEntry = tourEntries.get(position);
                 Intent mapIntent = new Intent(getContext(), MapsActivity.class);
-                mapIntent.putExtra("latitude", tourEntry.getLatitude());
-                mapIntent.putExtra("longitude", tourEntry.getLongitude());
-                mapIntent.putExtra("title", tourEntry.getTitle());
+                mapIntent.putExtra(getString(R.string.latitude), tourEntry.getLatitude());
+                mapIntent.putExtra(getString(R.string.longitude), tourEntry.getLongitude());
+                mapIntent.putExtra(getString(R.string.title), tourEntry.getTitle());
                 startActivity(mapIntent);
             }
         });

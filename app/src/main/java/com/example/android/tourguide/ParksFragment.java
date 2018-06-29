@@ -23,17 +23,17 @@ public class ParksFragment extends Fragment {
 
         // Create a list of {@link TourEntry} items
         final ArrayList<TourEntry> tourEntries = new ArrayList<>();
-        tourEntries.add(new TourEntry("Monk Botanical Gardens", "29-acre park with themed areas such as a meditation garden, extensive trails & a treehouse.",
+        tourEntries.add(new TourEntry(getString(R.string.monk_title), getString(R.string.monk_detail),
                 4.5, 61, 44.9881930, -89.6374250, R.drawable.monk_botanical_gardens));
-        tourEntries.add(new TourEntry("Rib Mountain State Park", "Rib Mountain State Park is a 1,528-acre Wisconsin state park near the city of Wausau. The park includes a ski resort concession, Granite Peak Ski Area, a reservable amphitheather, and 15.1 miles of trails.",
+        tourEntries.add(new TourEntry(getString(R.string.rib_mountain_title), getString(R.string.rib_mountain_detail),
                 4.5, 399, 44.9215810, -89.6882210, R.drawable.rib_mountain_state_park));
-        tourEntries.add(new TourEntry("Marathon Park", "Large park with mature pine trees & campsites, plus ballfields, skating rinks & a kids' train ride.",
-                4.5, 205, 0, -0, R.drawable.marathon_park));
-        tourEntries.add(new TourEntry("Sylvan Hill Park", "Popular place with a mountain biking park, cross-country ski trails & a tubing hill with tows.",
+        tourEntries.add(new TourEntry(getString(R.string.marathon_park_title), getString(R.string.marathon_park_detail),
+                4.5, 205, 44.9571030, -89.6517970, R.drawable.marathon_park));
+        tourEntries.add(new TourEntry(getString(R.string.sylvan_title), getString(R.string.sylvan_detail),
                 4.5, 80, 44.9864320, -89.6059700, R.drawable.sylvan_park));
-        tourEntries.add(new TourEntry("Isle of Ferns State Park", "Open play areas, hiking trails, popular place for wedding ceremony.",
+        tourEntries.add(new TourEntry(getString(R.string.ferns_title), getString(R.string.ferns_detail),
                 4.5, 16, 44.9517010, -89.6277950, R.drawable.isle_of_ferns));
-        tourEntries.add(new TourEntry("Wausau Whitewater Park", "Nonprofit locale for competitive kayaking & canoeing, with slalom & freestyle runs.",
+        tourEntries.add(new TourEntry(getString(R.string.whitewater_title), getString(R.string.whitewater_detail),
                 5.0, 50, 44.9580040, -89.6321500, R.drawable.wausau_whitewater_park));
 
         // Create an {@link TourEntryAdapter}, whose data source is a list of {@link Word}s. The
@@ -57,9 +57,9 @@ public class ParksFragment extends Fragment {
                 // Get the {@link TourEntry} object at the given position the user clicked on
                 TourEntry tourEntry = tourEntries.get(position);
                 Intent mapIntent = new Intent(getContext(), MapsActivity.class);
-                mapIntent.putExtra("latitude", tourEntry.getLatitude());
-                mapIntent.putExtra("longitude", tourEntry.getLongitude());
-                mapIntent.putExtra("title", tourEntry.getTitle());
+                mapIntent.putExtra(getString(R.string.latitude), tourEntry.getLatitude());
+                mapIntent.putExtra(getString(R.string.longitude), tourEntry.getLongitude());
+                mapIntent.putExtra(getString(R.string.title), tourEntry.getTitle());
                 startActivity(mapIntent);
             }
         });

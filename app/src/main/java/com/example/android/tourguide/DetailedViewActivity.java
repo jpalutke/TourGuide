@@ -23,10 +23,10 @@ public class DetailedViewActivity extends AppCompatActivity {
 
         // get values from calling Intent
         Intent intent = getIntent();
-        imageResourceID = intent.getIntExtra("imageResourceID", 0);
-        titleString = intent.getStringExtra("title");
-        detailsString = intent.getStringExtra("details");
-        storyString = intent.getStringExtra("story");
+        imageResourceID = intent.getIntExtra(getString(R.string.imageResourceID), 0);
+        titleString = intent.getStringExtra(getString(R.string.title));
+        detailsString = intent.getStringExtra(getString(R.string.details));
+        storyString = intent.getStringExtra(getString(R.string.story));
 
         View pageView = findViewById(R.id.detail_page_view);
         pageView.setBackgroundColor(getResources().getColor(R.color.category_historical));
@@ -42,7 +42,7 @@ public class DetailedViewActivity extends AppCompatActivity {
 
         WebView story = findViewById(R.id.detail_story);
         story.setBackgroundColor(getResources().getColor(R.color.category_historical));
-        storyString = "<html><body><p align=\"justify\">" + storyString + "</p></body></html>";
+        storyString = getString(R.string.html_header) + storyString + getString(R.string.html_footer);
         story.loadData(storyString, "text/html", "utf-8");
     }
 }
